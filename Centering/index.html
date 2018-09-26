@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f06d06;
+        }
+
+        /**/
+        .parent-width-heigth {
+            background-color: #fff;
+            position: relative;
+            align-items: center;
+            width: 240px;
+            height: 240px;
+        }
+
+        .child-width-heigth {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            background-color: #000;
+            color: white;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .child-width-heigth > span {
+            
+        }
+
+        /**/
+        .parent-unknown-width-heigth {
+            background-color: #fff;
+            position: relative;
+            align-items: center;
+            width: 240px;
+            height: 240px;
+        }
+
+        .child-unknown-width-heigth {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #000;
+            color: white;
+        }
+
+        /*flexbox*/
+        .parent-flexbox {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            height: 240px;
+        }
+
+        .child-flexbox {
+            background-color: #000;
+            color: white;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Известна и ширина и высота</h3>
+    <div class="parent-width-heigth">
+        <div class="child-width-heigth">
+            <span>block 1</span>
+        </div>
+    </div>
+
+    <h3>Неизвестна ни ширина, ни высота</h3>
+
+    <div class="parent-unknown-width-heigth">
+        <div class="child-unknown-width-heigth">
+            <span>block 1</span>
+        </div>
+    </div>
+
+    <h3>Использование flexbox</h3>
+
+    <div class="parent-flexbox">
+        <div class="child-flexbox">
+            <span>flexbox 1</span>
+        </div>
+        <div class="child-flexbox">
+            <span>flexbox 2</span>
+        </div>
+    </div>
+</body>
+
+</html>

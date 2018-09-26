@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Горизонтальное центрирование
+    </title>
+    <style>
+        body {
+            background: #f06d06;
+        }
+
+        /*Для inline или inline-* элементов работает text-align: center;*/
+        header,
+        nav {
+            text-align: center;
+            background: white;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            background: black;
+            border-radius: 5px;
+            color: white;
+            padding: 3px 8px;
+        }
+
+        /*-------------------------------------------------------------*/
+        /*Для block level элементов margin-left/righ: auto;*/
+
+        main>div {
+            background: black;
+            color: white;
+            padding: 15px;
+            max-width: 125px;
+            margin: 5px;
+            text-align: left;
+        }
+
+        main {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .center {
+            margin: 0 auto;
+        }
+
+        /*-------------------------------------------------------------*/
+        /*Гогда необходимо горизонтально выровнять block level элементы, то удобно изменить display тип на inline-block или flex*/
+
+        /*inline-block*/
+
+        .inline-block-center {
+            text-align: center;
+        }
+
+        main>div.inline-block {
+            display: inline-block;
+
+        }
+
+        /*flexbox*/
+
+        .flexbox-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        /*Каджый должен быть в своей строке, центрирование по горизонтали*/
+
+         .selfrow {
+             margin: 10px auto;
+         }
+
+        /*-------------------------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <h3>Для inline или inline-* элементов работает text-align: center;</h3>
+    <header>
+        Этот текст центрирован
+    </header>
+    <nav role="navigation">
+        <a href="#">One</a>
+        <a href="#">Two</a>
+        <a href="#">Three</a>
+        <a href="#">Four</a>
+    </nav>
+
+    <hr>
+
+    <h3>
+        Для block level элементов margin-left и margin-righ в значении auto; У такого элемента должна быть задана
+        ширина, иначе он будет занимать всю ширину родительского элемента и не будет нуждаться в центрировании.
+    </h3>
+    <main>
+        <div class="center">
+            I'm a block level element and am centered.
+        </div>
+    </main>
+
+    <hr>
+
+    <h3>
+        У нас есть более 1-го block level элемента. Если вам нужно выровнять их в 1 строку, то лучше сменить их displey
+        тип на inline-block или flexbox.
+    </h3>
+
+    <h4>inline-block</h4>
+    <main class="inline-block-center">
+        <div class="inline-block">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div class="inline-block">
+            I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me
+            than my siblings do.
+        </div>
+        <div class="inline-block">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </main>
+
+    <h4>flexbox</h4>
+    <main class="flexbox-center">
+        <div class="flexbox">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div class="flexbox">
+            I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me
+            than my siblings do.
+        </div>
+        <div class="flexbox">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </main>
+
+    <h4>
+        Если каждый из них должен находиться поверх другого (в своей строке), то margin: 0 auto; все еще очень хороший инструмент.
+    </h4>
+    <main>
+        <div class="selfrow">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div class="selfrow">
+            I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me
+            than my siblings do.
+        </div>
+        <div class="selfrow">
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </main>
+</body>
+
+</html>
