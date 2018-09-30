@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* импорт фрагмента _reset.sass */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 400px;
+  height: 400px;
+  background-color: yellowgreen;
+  margin: 0 auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  color: yellowgreen;
+  background-color: aqua;
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  /* использование миксина */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/*  определение расширения */
+/* данный отрывок кода не попадет в css, т.к. %equal-heights не расширялся */
+/* данный отрывок кода не попадет в css, т.к. расширялся */
+.warning, .error, .succes, .message {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  color: #333333;
+}
+
+.succes {
+  background-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+/* Математические операторы*/
+.article-container {
+  width: 100%;
+}
+
+article[role=main] {
+  float: right;
+  width: 25%;
+}
+
+aside[role=complementary] {
+  float: left;
+  width: 75%;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,133 @@
+body {
+    font-family: Tahoma;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 77px;
+    margin-bottom: 96px;
+}
+
+.header-img {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+
+.header-text {
+    display: inline-block;
+    width: 54%;
+    vertical-align: middle;
+}
+
+.header-text_title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.header-text_subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.header-text_desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 526px;
+    margin-bottom: 47px;
+}
+
+.header-text_price {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 53px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #f05a22;
+    padding: 22px 44px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.button-o {
+    color: #f05a22;
+    background-color: transparent;
+    border: 2px solid #f05a22;
+    margin-left: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.features {
+    border: 1px solid #ffffff;
+    background-color: #f2f2f2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.features-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.features-block {
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+
+.features-block__img {
+    min-height: 50px;
+    margin-bottom: 23px;
+}
+
+.features-block__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.gallery {
+    padding-top: 100px;
+}
+
+.gallery__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.fgallery__peoples {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.peoples__item {
+    text-align: center;
+    width: 25%;
+    float: left;
+    min-height: 261px;
+    margin-bottom: 50px;
+}
