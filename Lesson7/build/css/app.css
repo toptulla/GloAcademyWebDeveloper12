@@ -16,7 +16,7 @@
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.description__header, .description__subheader, .description__text, .description__price, .buy, .learn-more {
+.description__header, .description__subheader, .description__text, .description__price, .buy, .learn-more, .header {
   font-family: Tahoma; }
 
 .description__header, .buy, .learn-more, .header {
