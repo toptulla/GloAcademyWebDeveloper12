@@ -1,17 +1,98 @@
-@import fonts
+.book
+    padding-top: 77px
+    padding-bottom: 96px
 
-html, body
-    height: 100%
-    display: grid
-    margin: 0
-    padding: 0
+.shipping-and-paymant
+    background-color: #f2f2f2
+    padding-top: 70px
+    padding-bottom: 90px
 
-body
-    background: orange
+.description
+    display: flex
+    flex-direction: column
+    
+.description__header, .description__subheader, .description__text, .description__price, .buy, .learn-more
+    font-family: Tahoma
 
-span
-    margin: auto
+.description__header, .buy, .learn-more, .header
+    font-weight: 700
+
+.description__subheader, .description__text, .description__price
+    font-weight: 400
+
+.description__header
+    font-size: 48px
+    margin-bottom: 15px
+
+.description__subheader, .header
+    font-size: 30px
+    margin-bottom: 20px
+
+.description__text
+    font-size: 18px
+    max-width: 530px
+    margin-bottom: 45px
+
+.description__price
+    font-size: 48px
+    margin-bottom: 50px
+
+.buy, .learn-more
+    font-size: 24px
+
+.buy
+    margin-right: 20px
+
+.button
+    padding: 22px 42px
+    border-radius: 5px
+    border-color: #f15921
+
+.button-ow
+    background-color: #f15921
     color: white
-    font-size: 60px
-    font-family: 'Roboto'
-    font-weight: bold
+
+.button-wo
+    background-color: white
+    color: #f15921
+
+.item__desc
+    font-family: 'Open Sans'
+    font-size: 18px
+    font-weight: 400
+    width: 250px
+    
+.item__img-icon
+    display: block
+    min-height: 54px
+    margin-bottom: 20px
+    position: relative
+
+.item__img-icon > img
+    position: absolute
+    transform: translateX(-50%)
+    bottom: 0px
+
+.book__description, .item
+    justify-content: center
+    align-items: center
+    
+.header, .item__desc
+    text-align: center
+
+.header
+    margin-bottom: 80px
+
+.recommendations
+    padding: 90px 0
+
+.item
+    display: flex
+
+.item__img
+    display: block
+    margin: 15px
+
+.item_v
+    flex-direction: column
+    margin: 15px 0px

@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var runseq = require('run-sequence');
 
-gulp.task('default', function() {
+gulp.task('default', function () {
   runseq(
+    'addbootstrap',
     'copy',
     'sass',
     'server',
